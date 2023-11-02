@@ -1,0 +1,116 @@
+body {
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* menu principal */
+
+header {
+    width: 100%;
+    background: #040285;
+}
+ 
+/* para desaparecer el checkbox */
+
+#btn-menu {
+    display: none;
+}
+
+/* selecionar label de header */
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+/* cuando pasemos el mouse */
+
+header label:hover {
+     cursor: pointer;
+     background: rgb(0,0,0,0.3);
+}
+
+/* seleccionar ul dentro de menu */
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* li dentro de menu */
+
+.menu li {
+    border-right: 1px solid #fff;
+}
+
+/* pasar mouse por encima del menu */
+
+.menu li:hover {
+    background: rgba(0,0,0,0.3);
+
+}
+
+/* seleccionar las a de los li dentro de menu */
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+/* submenus */
+
+.menu ul li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    background: #f1032b;
+}
+
+.menu ul li:hover > ul {
+    display:block;
+}
+/* cambiar vista de menu en la ventana cuando es menos de 768 pixeles */
+
+@media (max-width:768px) {
+    /* label que esta dentro del header */
+
+    header label {
+        display: block;
+    }
+
+    /* vista de menu */
+
+    .menu {
+        position: absolute;
+        background: #1d0685;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        border-top: 1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+
+    
+}

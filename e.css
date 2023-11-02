@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family:sans-serif;
+    background: url(imagen.jpg);
+    background-size: 100px;
+   
+  
+}
+
+h1{
+    color:#fff;
+    text-align:center;
+
+}
+
+
+.form-register{
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background: rgb(26, 17, 161);
+    border-radius:7px;
+}
+
+.form-login{
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background: rgb(26, 17, 161);
+    border-radius:7px;
+}
+
+.form__titulo{
+    background: rgb(118, 109, 243);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid blue;
+}
+
+.contenedor-inputs{
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedor-input{
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 1px solid darkgray;
+}
+
+.input-48{
+    width: 48%;
+}
+
+.input-100{
+    width: 100%;
+}
+
+.btn-enviar{
+    background:rgb(2, 15, 59);
+    color: #fff;
+    margin: auto;
+    cursor:pointer;
+    font-size: 20px;
+
+}
+
+.btn-enviar:active{
+    transform: scale(1.05);
+}
+
+.form__link{
+color: rgb(255, 255, 255);
+width: 100%;
+margin:7px;
+text-align: center;
+font-size: 14px;
+
+}
+
