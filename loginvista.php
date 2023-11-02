@@ -45,7 +45,7 @@ if($varsesion==null || $varsesion = ''){
          
          </div>
          <input type="submit" value="Login" class="button">
-         <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+         <p>Al registrarte  , aceptas nuestras Condiciones de uso y Política de privacidad.</p>
          <p class="form__link">¿ya tienes una cuenta?<a href="login.html" >Ingresa aqui</a>/p>
      </div>
     </form>
